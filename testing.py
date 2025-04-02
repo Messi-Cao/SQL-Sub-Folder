@@ -1,5 +1,7 @@
 import sqlite3
 
+#database variable
+
 Database = 'cars.db'
 
 def print_every_car():
