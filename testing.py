@@ -4,6 +4,7 @@ import sqlite3
 
 Database = 'cars.db'
 
+#define print_every_car to print all car models
 def print_every_car():
     with sqlite3.connect(Database) as db:
         cursor = db.cursor()
