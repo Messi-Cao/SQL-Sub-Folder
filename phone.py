@@ -34,7 +34,7 @@ def print_every_manufacturer():
         results = cursor.fetchall()
         #loop through all the results from products
         #print them nicely
-        print("The following are the list of manufacturers of recently issued products:")
+        print("The following are the list of manufacturers of selected phone models:")
         for manufacturer in results:
             print(f"Name: {manufacturer[1]}") 
 
