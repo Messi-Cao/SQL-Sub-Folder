@@ -14,10 +14,16 @@ def print_every_phone():
         results = cursor.fetchall()
         #loop through all the results from products
         #print them nicely
-        print("The following are the list of some current phone models:")
+        print("The following are the list of some current phone models with their specifications:")
         for phone in results:
             print(f"Name: {phone[1]}") 
             print(f"Chipset: {phone[2]}") 
+            print(f"Max Ram: {phone[3]}")
+            print(f"Max SSD: {phone[4]}")
+            print(f"Camera MP (Wide and Ultra Wide): {phone[5]}")
+            print(f"Screen Resolution: {phone[6]}")
+            print(f"Current Operating System: {phone[7]}")
+            print(f"Release Year (NZ): {phone[8]}")
 
 def print_every_manufacturer():
     '''print all the products nicely'''
@@ -37,7 +43,7 @@ while True:
     user_input = input(
 """
 What would you like to do?
-1. Print all products with their issued date
+1. Print all phones
 2. Print all manufacturers
 3. Quit
 """)
@@ -48,4 +54,4 @@ What would you like to do?
     elif user_input == "3":
         break
     else:
-        print("Invalid option")
+        print("Sorry, invalid option!")
