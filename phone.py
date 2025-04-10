@@ -67,7 +67,7 @@ def print_every_phone_ram():
         print("The following are the list of some current phone models with their maximum RAM:")
         for phone in results:
             print(f"Name: {phone[0]}") 
-            print(f"Max RAM: {phone[1]}")
+            print(f"Max RAM: {phone[1]} GB")
 
 #define print_every_phone to print all phone model max SSDs
 def print_every_phone_ssd():
@@ -82,22 +82,22 @@ def print_every_phone_ssd():
         print("The following are the list of some current phone models with maximum SSD:")
         for phone in results:
             print(f"Name: {phone[0]}") 
-            print(f"Max SSD: {phone[1]}")
+            print(f"Max SSD: {phone[1]} GB")
 
 #define print_every_phone to print all phone model camera megapixels
 def print_every_phone_camera_mp():
     '''print all the products nicely'''
     with sqlite3.connect(Database) as db:
         cursor = db.cursor()
-        sql = "SELECT name, camera_mp_wide_and_ultra_wide FROM phone;"
+        sql = "SELECT name, camera_mp_wide_only FROM phone;"
         cursor.execute(sql)
         results = cursor.fetchall()
         #loop through all the results from products
         #print them nicely
-        print("The following are the list of some current phone models with their camera megapixels:")
+        print("The following are the list of some current phone models with their wide camera megapixels:")
         for phone in results:
             print(f"Name: {phone[0]}") 
-            print(f"Camera MP (Wide and Ultra Wide): {phone[1]}")
+            print(f"Camera MP (Wide only): {phone[1]} MP")
 
 #define print_every_phone to print all phone model display resolutions
 def print_every_phone_screen_res():
@@ -168,7 +168,7 @@ What would you like to do?
 3. Prine all phone names and chipsets only
 4. Prine all phone names and max RAM only
 5. Prine all phone names and max SSD only
-6. Prine all phone names and Camera MP (Wide and Ultra Wide) only
+6. Prine all phone names and Camera MP (Wide) only
 7. Prine all phone names and screen resolution only
 8. Prine all phone names and current OS only
 9. Prine all phone names and release year (NZ) only
