@@ -151,8 +151,7 @@ What would you like to do?
 6. Print all houses by address and description
 7. Print all houses by address and area
 8. Print all houses by address and average cost
-9. Custom (Work in progress)
-10. Quit
+9. Quit
 """)
     if user_input == "1":
         print_every_house()
@@ -170,7 +169,7 @@ What would you like to do?
         print_every_house_by_area()
     elif user_input == "8":
         print_every_house_by_price()
-    elif user_input == "10":
+    elif user_input == "9":
         break
     else:
         print('Oops, this option is not available. Please try another one!')
