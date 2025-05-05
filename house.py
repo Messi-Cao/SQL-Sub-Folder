@@ -23,7 +23,7 @@ def print_every_house():
             print(f"Floors: {house[5]}")
             print(f"Basement: {house[6]}")
             print(f"Description: {house[7]}")
-            print(f"Area: {house[8]}")
+            print(f"Area: {house[11]}")
             print(f"Average Cost: ${house[9]}")
 #Main code
 while True:
