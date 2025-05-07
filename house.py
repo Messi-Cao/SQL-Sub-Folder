@@ -160,10 +160,124 @@ def print_every_house_with_two_bedrooms():
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
 
+#define print_every_house_with_three_bedrooms
+def print_every_house_with_three_bedrooms():
+    '''print all the products nicely'''
+    with sqlite3.connect(Database) as db:
+        cursor = db.cursor()
+        sql = "SELECT * FROM house JOIN area ON house.area_id = area.id WHERE bedrooms = 3;"
+        cursor.execute(sql)
+        results = cursor.fetchall()
+        #loop through all the results from house
+        #print them nicely
+        print("The following are the list of three bedroom houses on auction in Pocket City:")
+        for house in results:
+            print(f"Address Number: {house[1]}") 
+            print(f"Street: {house[2]}") 
+            print(f"Bedrooms: {house[3]}")
+            print(f"Bathrooms: {house[4]}")
+            print(f"Floors: {house[5]}")
+            print(f"Basement: {house[6]}")
+            print(f"Description: {house[7]}")
+            print(f"Area Name: {house[11]}")
+            print(f"Average Cost: ${house[9]}")
+
+#define print_every_house_with_four_bedrooms
+def print_every_house_with_four_bedrooms():
+    '''print all the products nicely'''
+    with sqlite3.connect(Database) as db:
+        cursor = db.cursor()
+        sql = "SELECT * FROM house JOIN area ON house.area_id = area.id WHERE bedrooms = 4;"
+        cursor.execute(sql)
+        results = cursor.fetchall()
+        #loop through all the results from house
+        #print them nicely
+        print("The following are the list of four bedroom houses on auction in Pocket City:")
+        for house in results:
+            print(f"Address Number: {house[1]}") 
+            print(f"Street: {house[2]}") 
+            print(f"Bedrooms: {house[3]}")
+            print(f"Bathrooms: {house[4]}")
+            print(f"Floors: {house[5]}")
+            print(f"Basement: {house[6]}")
+            print(f"Description: {house[7]}")
+            print(f"Area Name: {house[11]}")
+            print(f"Average Cost: ${house[9]}")
+
+#define print_every_house_with_five_bedrooms
+def print_every_house_with_five_bedrooms():
+    '''print all the products nicely'''
+    with sqlite3.connect(Database) as db:
+        cursor = db.cursor()
+        sql = "SELECT * FROM house JOIN area ON house.area_id = area.id WHERE bedrooms = 5;"
+        cursor.execute(sql)
+        results = cursor.fetchall()
+        #loop through all the results from house
+        #print them nicely
+        print("The following are the list of five bedroom houses on auction in Pocket City:")
+        for house in results:
+            print(f"Address Number: {house[1]}") 
+            print(f"Street: {house[2]}") 
+            print(f"Bedrooms: {house[3]}")
+            print(f"Bathrooms: {house[4]}")
+            print(f"Floors: {house[5]}")
+            print(f"Basement: {house[6]}")
+            print(f"Description: {house[7]}")
+            print(f"Area Name: {house[11]}")
+            print(f"Average Cost: ${house[9]}")
+
+#define print_every_house_with_six_bedrooms
+def print_every_house_with_six_bedrooms():
+    '''print all the products nicely'''
+    with sqlite3.connect(Database) as db:
+        cursor = db.cursor()
+        sql = "SELECT * FROM house JOIN area ON house.area_id = area.id WHERE bedrooms = 6;"
+        cursor.execute(sql)
+        results = cursor.fetchall()
+        #loop through all the results from house
+        #print them nicely
+        print("The following are the list of six bedroom houses on auction in Pocket City:")
+        for house in results:
+            print(f"Address Number: {house[1]}") 
+            print(f"Street: {house[2]}") 
+            print(f"Bedrooms: {house[3]}")
+            print(f"Bathrooms: {house[4]}")
+            print(f"Floors: {house[5]}")
+            print(f"Basement: {house[6]}")
+            print(f"Description: {house[7]}")
+            print(f"Area Name: {house[11]}")
+            print(f"Average Cost: ${house[9]}")
+
+#define print_every_house_with_seven_bedrooms
+def print_every_house_with_seven_bedrooms():
+    '''print all the products nicely'''
+    with sqlite3.connect(Database) as db:
+        cursor = db.cursor()
+        sql = "SELECT * FROM house JOIN area ON house.area_id = area.id WHERE bedrooms = 7;"
+        cursor.execute(sql)
+        results = cursor.fetchall()
+        #loop through all the results from house
+        #print them nicely
+        print("The following are the list of two bedroom houses on auction in Pocket City:")
+        for house in results:
+            print(f"Address Number: {house[1]}") 
+            print(f"Street: {house[2]}") 
+            print(f"Bedrooms: {house[3]}")
+            print(f"Bathrooms: {house[4]}")
+            print(f"Floors: {house[5]}")
+            print(f"Basement: {house[6]}")
+            print(f"Description: {house[7]}")
+            print(f"Area Name: {house[11]}")
+            print(f"Average Cost: ${house[9]}")
+
 #Main code
 while True:
     user_input = input(
 """
+Welcome user, to the application of 'Pocket City House Selector'!
+In this application, you can explore a range of houses on auction in Pocket City.
+Please press '0' whenever you need to leave a selection page. 
+Keep in mind you must type the exact same character shown to the left of the option. 
 What would you like to do?
 1. Print all houses
 2. Print all houses by address only
@@ -203,24 +317,24 @@ Please choose from the following:
 2. Bathrooms
 3. Floors
 4. Basement Availability
-5. Quit
+0. Quit
 """)
                 #bedroom quantity
                 if custom_input == "1":
                     while True:
                         bedroom_quantity = input("Choose your bedroom quantity (To exit, please press '0'): ")
                         if bedroom_quantity == "2":
-                            print()
+                            print_every_house_with_two_bedrooms()
                         elif bedroom_quantity == "3":
-                            print()
+                            print_every_house_with_three_bedrooms()
                         elif bedroom_quantity == "4":
-                            print()
+                            print_every_house_with_four_bedrooms()
                         elif bedroom_quantity == "5":
-                            print()
+                            print_every_house_with_five_bedrooms()
                         elif bedroom_quantity == "6":
-                            print()
+                            print_every_house_with_six_bedrooms()
                         elif bedroom_quantity == "7":
-                            print()
+                            print_every_house_with_seven_bedrooms()
                         elif bedroom_quantity == "0":
                             break
                         else:
@@ -275,7 +389,7 @@ Please choose from the following:
                     else:
                         print("You may only choose 'yes' or 'no' for this option, please try again.")
                 #To get out of the selection
-                elif custom_input == "5":
+                elif custom_input == "0":
                     break
                 #Invalid input message
                 else:
