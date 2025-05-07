@@ -575,7 +575,7 @@ What would you like to do?
 7. Print all houses by address and area
 8. Print all houses by address and average cost
 9. Choose from custom list
-0. Quit
+0. Quit application
 """)
     if user_input == "1":
         print_every_house()
