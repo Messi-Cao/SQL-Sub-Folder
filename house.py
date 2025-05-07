@@ -609,7 +609,7 @@ Please choose from the following:
                 #bedroom quantity
                 if custom_input == "1":
                     while True:
-                        bedroom_quantity = input("Choose your bedroom quantity (To exit, please press '0'): ")
+                        bedroom_quantity = input("Choose your bedroom quantity (To get out of the page, please press '0'): ")
                         if bedroom_quantity == "2":
                             print_every_house_with_two_bedrooms()
                         elif bedroom_quantity == "3":
@@ -629,7 +629,7 @@ Please choose from the following:
                 #bathroom quantity
                 elif custom_input == "2":
                     while True:
-                        bathroom_quantity = input("Choose your bathroom quantity (To exit, please press '0'): ")
+                        bathroom_quantity = input("Choose your bathroom quantity (To get out of the page, please press '0'): ")
                         if bathroom_quantity == "1":
                             print_every_house_with_one_bathroom()
                         elif bathroom_quantity == "2":
@@ -651,7 +651,7 @@ Please choose from the following:
                 #floor quantity
                 elif custom_input == "3":
                     while True: 
-                        floor_quantity = input("Choose your floor quantity (To exit, please press '0'): ")
+                        floor_quantity = input("Choose your floor quantity (To get out of the page, please press '0'): ")
                         if floor_quantity == "1":
                             print_every_house_with_one_floor()
                         elif floor_quantity == "2":
@@ -670,7 +670,7 @@ Please choose from the following:
                         basement_availability = input(
 """
 Choose 'yes' or 'no' for your basement availability.
-To exit, please press '0': 
+To get out of the page, please press '0': 
 """).lower()
                         if basement_availability == "yes":
                             print_every_house_with_basement()
