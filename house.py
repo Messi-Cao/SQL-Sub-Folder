@@ -666,19 +666,20 @@ Please choose from the following:
                             print('Sorry, we currently do not have this option. Please come back after!')
                 #basement availability
                 elif custom_input == "4":
-                    basement_availability = input(
+                    while True: 
+                        basement_availability = input(
 """
 Choose 'yes' or 'no' for your basement availability.
 To exit, please press '0': 
 """).lower()
-                    if basement_availability == "yes":
-                        print_every_house_with_basement()
-                    elif basement_availability == "no":
-                        print_every_house_without_basement()
-                    elif basement_availability == "0":
-                        break
-                    else:
-                        print("You may only choose 'yes' or 'no' for this option, please try again.")
+                        if basement_availability == "yes":
+                            print_every_house_with_basement()
+                        elif basement_availability == "no":
+                            print_every_house_without_basement()
+                        elif basement_availability == "0":
+                            break
+                        else:
+                            print("You may only choose 'yes' or 'no' for this option, please try again.")
                 #To get out of the selection
                 elif custom_input == "0":
                     break
