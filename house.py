@@ -574,7 +574,7 @@ What would you like to do?
 6. Print all houses by address and description
 7. Print all houses by address and area
 8. Print all houses by address and average cost
-9. Choose from custom list (Currently under testing)
+9. Choose from custom list
 0. Quit
 """)
     if user_input == "1":
