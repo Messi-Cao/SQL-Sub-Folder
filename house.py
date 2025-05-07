@@ -673,9 +673,9 @@ Warning: Do not capitalise any letter, or else it will display an error.
 To exit, please press '0': 
 """)
                     if basement_availability == "yes":
-                        print()
+                        print_every_house_with_basement()
                     elif basement_availability == "no":
-                        print()
+                        print_every_house_without_basement()
                     elif basement_availability == "0":
                         break
                     else:
