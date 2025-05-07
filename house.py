@@ -604,7 +604,7 @@ Please choose from the following:
 2. Bathrooms
 3. Floors
 4. Basement Availability
-0. Quit
+0. Exit page
 """)
                 #bedroom quantity
                 if custom_input == "1":
