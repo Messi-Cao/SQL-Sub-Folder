@@ -669,9 +669,8 @@ Please choose from the following:
                     basement_availability = input(
 """
 Choose 'yes' or 'no' for your basement availability.
-Warning: Do not capitalise any letter, or else it will display an error.
 To exit, please press '0': 
-""")
+""").lower()
                     if basement_availability == "yes":
                         print_every_house_with_basement()
                     elif basement_availability == "no":
