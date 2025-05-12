@@ -614,7 +614,8 @@ def print_every_house_without_basement():
 while True:
     user_input = input(
 """
-Welcome user, to the application of 'Pocket City House Selector'! In this application, you can explore a range of Pocket City houses on auction!
+Welcome user, to the application of 'Pocket City House Selector'! 
+In this application, you can explore a range of Pocket City houses on auction!
 Press '0' whenever you need to leave a selection page. 
 Please keep in mind you must type the exact same character shown to the left of the option. 
 (E.g. When it displays "1. Print all houses", you must type exactly that character ("1") into the input to avoid errors.)
