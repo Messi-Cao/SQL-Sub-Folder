@@ -625,7 +625,7 @@ What would you like to do?
 4. Print all houses by address and floor
 5. Print all houses by address and basement availabiliy
 6. Print all houses by address and description
-7. Print all houses by address and area
+7. Print all houses by address and area name
 8. Print all houses by address and average cost
 9. Choose from custom list
 0. Quit application
