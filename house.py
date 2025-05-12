@@ -25,6 +25,7 @@ def print_every_house():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_by_address to print all house addresses
 def print_every_house_by_address():
@@ -40,6 +41,7 @@ def print_every_house_by_address():
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
+            print("----------------------------------------")
 
 #define print_every_house_by_rooms to print all house rooms
 def print_every_house_by_rooms():
@@ -57,6 +59,7 @@ def print_every_house_by_rooms():
             print(f"Street: {house[2]}") 
             print(f"Bedrooms: {house[3]}")
             print(f"Bathrooms: {house[4]}")
+            print("----------------------------------------")
 
 #define print_every_house_by_address to print all house floors
 def print_every_house_by_floors():
@@ -73,6 +76,7 @@ def print_every_house_by_floors():
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}")
             print(f"Floors: {house[5]}")
+            print("----------------------------------------")
 
 #define print_every_house_by_basement to print all house with basement availability
 def print_every_house_by_basement():
@@ -89,6 +93,7 @@ def print_every_house_by_basement():
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}")
             print(f"Basement: {house[6]}")
+            print("----------------------------------------")
 
 #define print_every_house_by_description to print all house descriptions
 def print_every_house_by_description():
@@ -105,6 +110,7 @@ def print_every_house_by_description():
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}")
             print(f"Description: {house[7]}")
+            print("----------------------------------------")
 
 #define print_every_house_by_area to print all house area names
 def print_every_house_by_area():
@@ -121,6 +127,7 @@ def print_every_house_by_area():
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}")
             print(f"Area Name: {house[11]}")
+            print("----------------------------------------")
 
 #define print_every_house_by_price to print all house price
 def print_every_house_by_price():
@@ -137,6 +144,7 @@ def print_every_house_by_price():
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_two_bedrooms
 def print_every_house_with_two_bedrooms():
@@ -159,6 +167,7 @@ def print_every_house_with_two_bedrooms():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_three_bedrooms
 def print_every_house_with_three_bedrooms():
@@ -181,6 +190,7 @@ def print_every_house_with_three_bedrooms():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_four_bedrooms
 def print_every_house_with_four_bedrooms():
@@ -203,6 +213,7 @@ def print_every_house_with_four_bedrooms():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_five_bedrooms
 def print_every_house_with_five_bedrooms():
@@ -225,6 +236,7 @@ def print_every_house_with_five_bedrooms():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_six_bedrooms
 def print_every_house_with_six_bedrooms():
@@ -247,6 +259,7 @@ def print_every_house_with_six_bedrooms():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_seven_bedrooms
 def print_every_house_with_seven_bedrooms():
@@ -269,6 +282,7 @@ def print_every_house_with_seven_bedrooms():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_one_bathroom
 def print_every_house_with_one_bathroom():
@@ -291,6 +305,7 @@ def print_every_house_with_one_bathroom():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_two_bathrooms
 def print_every_house_with_two_bathrooms():
@@ -313,6 +328,7 @@ def print_every_house_with_two_bathrooms():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_two_point_five_bathrooms
 def print_every_house_with_two_point_five_bathrooms():
@@ -335,6 +351,7 @@ def print_every_house_with_two_point_five_bathrooms():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_three_bathrooms
 def print_every_house_with_three_bathrooms():
@@ -357,6 +374,7 @@ def print_every_house_with_three_bathrooms():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_four_point_five_bathrooms
 def print_every_house_with_four_point_five_bathrooms():
@@ -379,6 +397,7 @@ def print_every_house_with_four_point_five_bathrooms():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_five_bathrooms
 def print_every_house_with_five_bathrooms():
@@ -401,6 +420,7 @@ def print_every_house_with_five_bathrooms():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_ten_bathrooms
 def print_every_house_with_ten_bathrooms():
@@ -423,6 +443,7 @@ def print_every_house_with_ten_bathrooms():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_one_floor
 def print_every_house_with_one_floor():
@@ -445,6 +466,7 @@ def print_every_house_with_one_floor():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_two_floors
 def print_every_house_with_two_floors():
@@ -467,6 +489,7 @@ def print_every_house_with_two_floors():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_three_floors
 def print_every_house_with_three_floors():
@@ -489,6 +512,7 @@ def print_every_house_with_three_floors():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_four_floors
 def print_every_house_with_four_floors():
@@ -511,6 +535,7 @@ def print_every_house_with_four_floors():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_with_basement
 def print_every_house_with_basement():
@@ -533,6 +558,7 @@ def print_every_house_with_basement():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #define print_every_house_without_basement
 def print_every_house_without_basement():
@@ -555,6 +581,7 @@ def print_every_house_without_basement():
             print(f"Description: {house[7]}")
             print(f"Area Name: {house[11]}")
             print(f"Average Cost: ${house[9]}")
+            print("----------------------------------------")
 
 #Main code of the application
 while True:
