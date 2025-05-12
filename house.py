@@ -15,6 +15,7 @@ def print_every_house():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of houses on auction in Pocket City with their general details:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -38,6 +39,7 @@ def print_every_house_by_address():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of houses on auction in Pocket City with their addresses:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -54,6 +56,7 @@ def print_every_house_by_rooms():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of houses on auction in Pocket City with their room quantities:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -72,6 +75,7 @@ def print_every_house_by_floors():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of houses on auction in Pocket City with their floor quantities:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}")
@@ -89,6 +93,7 @@ def print_every_house_by_basement():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of houses on auction in Pocket City with their basement availability:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}")
@@ -106,6 +111,7 @@ def print_every_house_by_description():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of houses on auction in Pocket City with their descriptions:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}")
@@ -123,6 +129,7 @@ def print_every_house_by_area():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of houses on auction in Pocket City with their area names:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}")
@@ -140,6 +147,7 @@ def print_every_house_by_price():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of houses on auction in Pocket City with their average price:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}")
@@ -157,6 +165,7 @@ def print_every_house_with_two_bedrooms():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of two bedroom houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -180,6 +189,7 @@ def print_every_house_with_three_bedrooms():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of three bedroom houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -203,6 +213,7 @@ def print_every_house_with_four_bedrooms():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of four bedroom houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -226,6 +237,7 @@ def print_every_house_with_five_bedrooms():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of five bedroom houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -249,6 +261,7 @@ def print_every_house_with_six_bedrooms():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of six bedroom houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -272,6 +285,7 @@ def print_every_house_with_seven_bedrooms():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of seven bedroom houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -295,6 +309,7 @@ def print_every_house_with_one_bathroom():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of one bathroom houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -318,6 +333,7 @@ def print_every_house_with_two_bathrooms():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of two bathroom houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -341,6 +357,7 @@ def print_every_house_with_two_point_five_bathrooms():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of 2.5 bathroom houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -364,6 +381,7 @@ def print_every_house_with_three_bathrooms():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of three bathroom houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -387,6 +405,7 @@ def print_every_house_with_four_point_five_bathrooms():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of 4.5 bathroom houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -410,6 +429,7 @@ def print_every_house_with_five_bathrooms():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of five bathroom houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -433,6 +453,7 @@ def print_every_house_with_ten_bathrooms():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of ten bathroom houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -456,6 +477,7 @@ def print_every_house_with_one_floor():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of single storey houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -479,6 +501,7 @@ def print_every_house_with_two_floors():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of two storey houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -502,6 +525,7 @@ def print_every_house_with_three_floors():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of three storey houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -525,6 +549,7 @@ def print_every_house_with_four_floors():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of four storey houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -548,6 +573,7 @@ def print_every_house_with_basement():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of four storey houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
@@ -571,6 +597,7 @@ def print_every_house_without_basement():
         #loop through all the results from house
         #print them nicely
         print("The following are the list of four storey houses on auction in Pocket City:")
+        print("----------------------------------------")
         for house in results:
             print(f"Address Number: {house[1]}") 
             print(f"Street: {house[2]}") 
