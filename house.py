@@ -683,7 +683,8 @@ yes = "yes"
 no = "no"
 #Main functioning code of the application
 while True:
-   user_input = int(input(
+    try: 
+        user_input = int(input(
 """
 Welcome user, to the application of 'Pocket City House Selector' where you can explore 12 Pocket City houses on auction!
 Press '0' whenever you need to leave a selection page.
@@ -701,26 +702,27 @@ What would you like to do?
 9. Choose from custom list
 0. Quit application
 """))
-   if user_input == print_all:
-       print_every_house()
-   elif user_input == print_all_by_address:
-       print_every_house_by_address()
-   elif user_input == print_all_by_address_and_rooms:
-       print_every_house_by_rooms()
-   elif user_input == print_all_by_address_and_floor:
-       print_every_house_by_floors()
-   elif user_input == print_all_by_address_and_basement:
-       print_every_house_by_basement()
-   elif user_input == print_all_by_address_and_description:
-       print_every_house_by_description()
-   elif user_input == print_all_by_address_and_area_name:
-       print_every_house_by_area()
-   elif user_input == print_all_by_address_and_cost:
-       print_every_house_by_price()
-   elif user_input == print_custom:
-       #Custom selection
-       while True:
-           custom_input = int(input(
+        if user_input == print_all:
+            print_every_house()
+        elif user_input == print_all_by_address:
+            print_every_house_by_address()
+        elif user_input == print_all_by_address_and_rooms:
+            print_every_house_by_rooms()
+        elif user_input == print_all_by_address_and_floor:
+            print_every_house_by_floors()
+        elif user_input == print_all_by_address_and_basement:
+            print_every_house_by_basement()
+        elif user_input == print_all_by_address_and_description:
+            print_every_house_by_description()
+        elif user_input == print_all_by_address_and_area_name:
+            print_every_house_by_area()
+        elif user_input == print_all_by_address_and_cost:
+            print_every_house_by_price()
+        elif user_input == print_custom:
+            #Custom selection
+            while True:
+                try:
+                    custom_input = int(input(
 """
 Please choose from the following:
 1. Bedrooms
@@ -729,101 +731,117 @@ Please choose from the following:
 4. Basement Availability
 0. Exit page
 """))
-           #bedroom quantity
-           if custom_input == bedrooms:
-               while True:
-                   bedroom_quantity = int(input(
+                    #bedroom quantity
+                    if custom_input == bedrooms:
+                        while True:
+                            try:
+                                bedroom_quantity = int(input(
 """
 Choose your bedroom quantity.
 To get out of the page, please press '0':
 """))
-                   if bedroom_quantity == two_bedrooms:
-                       print_every_house_with_two_bedrooms()
-                   elif bedroom_quantity == three_bedrooms:
-                       print_every_house_with_three_bedrooms()
-                   elif bedroom_quantity == four_bedrooms:
-                       print_every_house_with_four_bedrooms()
-                   elif bedroom_quantity == five_bedrooms:
-                       print_every_house_with_five_bedrooms()
-                   elif bedroom_quantity == six_bedrooms:
-                       print_every_house_with_six_bedrooms()
-                   elif bedroom_quantity == seven_bedrooms:
-                       print_every_house_with_seven_bedrooms()
-                   elif bedroom_quantity == quit:
-                       break
-                   else:
-                       print('Sorry, we currently do not have this option. Please come back after!')
-               #bathroom quantity
-           elif custom_input == bathrooms:
-               while True:
-                   bathroom_quantity = float(input(
+                                if bedroom_quantity == two_bedrooms:
+                                    print_every_house_with_two_bedrooms()
+                                elif bedroom_quantity == three_bedrooms:
+                                    print_every_house_with_three_bedrooms()
+                                elif bedroom_quantity == four_bedrooms:
+                                    print_every_house_with_four_bedrooms()
+                                elif bedroom_quantity == five_bedrooms:
+                                    print_every_house_with_five_bedrooms()
+                                elif bedroom_quantity == six_bedrooms:
+                                    print_every_house_with_six_bedrooms()
+                                elif bedroom_quantity == seven_bedrooms:
+                                    print_every_house_with_seven_bedrooms()
+                                elif bedroom_quantity == quit:
+                                    break
+                                else:
+                                    print('Sorry, we currently do not have this option. Please come back after!')
+                            except ValueError:
+                                print('This is not a valid option. Please type an integer.')
+                    #bathroom quantity
+                    elif custom_input == bathrooms:
+                        while True:
+                            try:
+                                bathroom_quantity = float(input(
 """
 Choose your bathroom quantity.
 To get out of the page, please press '0':
 """))
-                   if bathroom_quantity == one_bathroom:
-                           print_every_house_with_one_bathroom()
-                   elif bathroom_quantity == two_bathrooms:
-                           print_every_house_with_two_bathrooms()
-                   elif bathroom_quantity == two_point_five_bathrooms:
-                           print_every_house_with_two_point_five_bathrooms()
-                   elif bathroom_quantity == three_bathrooms:
-                           print_every_house_with_three_bathrooms()
-                   elif bathroom_quantity == four_point_five_bathrooms:
-                           print_every_house_with_four_point_five_bathrooms()
-                   elif bathroom_quantity == five_bathrooms:
-                           print_every_house_with_five_bathrooms()
-                   elif bathroom_quantity == ten_bathrooms:
-                           print_every_house_with_ten_bathrooms()
-                   elif bathroom_quantity == quit:
-                           break
-                   else:
-                       print('Sorry, we currently do not have this option. Please come back after!')
-           #floor quantity
-           elif custom_input == floors:
-               while True:
-                   floor_quantity = int(input(
+                                if bathroom_quantity == one_bathroom:
+                                    print_every_house_with_one_bathroom()
+                                elif bathroom_quantity == two_bathrooms:
+                                    print_every_house_with_two_bathrooms()
+                                elif bathroom_quantity == two_point_five_bathrooms:
+                                    print_every_house_with_two_point_five_bathrooms()
+                                elif bathroom_quantity == three_bathrooms:
+                                    print_every_house_with_three_bathrooms()
+                                elif bathroom_quantity == four_point_five_bathrooms:
+                                    print_every_house_with_four_point_five_bathrooms()
+                                elif bathroom_quantity == five_bathrooms:
+                                    print_every_house_with_five_bathrooms()
+                                elif bathroom_quantity == ten_bathrooms:
+                                    print_every_house_with_ten_bathrooms()
+                                elif bathroom_quantity == quit:
+                                    break
+                                else:
+                                    print('Sorry, we currently do not have this option. Please come back after!')
+                            except ValueError:
+                                print('This is not a valid option, please type an integer or a decimal number.')
+                    #floor quantity
+                    elif custom_input == floors:
+                        while True:
+                            try:
+                                floor_quantity = int(input(
 """
 Choose your floor quantity.
 To get out of the page, please press '0':
 """))
-                   if floor_quantity == one_floor:
-                       print_every_house_with_one_floor()
-                   elif floor_quantity == two_floors:
-                       print_every_house_with_two_floors()
-                   elif floor_quantity == three_floors:
-                       print_every_house_with_three_floors()
-                   elif floor_quantity == four_floors:
-                       print_every_house_with_four_floors()
-                   elif floor_quantity == quit:
-                       break
-                   else:
-                       print('Sorry, we currently do not have this option. Please come back after!')
-           #basement availability
-           elif custom_input == basement:
-               while True:
-                   basement_availability = input(
+                                if floor_quantity == one_floor:
+                                    print_every_house_with_one_floor()
+                                elif floor_quantity == two_floors:
+                                    print_every_house_with_two_floors()
+                                elif floor_quantity == three_floors:
+                                    print_every_house_with_three_floors()
+                                elif floor_quantity == four_floors:
+                                    print_every_house_with_four_floors()
+                                elif floor_quantity == quit:
+                                    break
+                                else:
+                                    print('Sorry, we currently do not have this option. Please come back after!')
+                            except ValueError:
+                                print('This is not a valid option, please type an integer.')
+                    #basement availability
+                    elif custom_input == basement:
+                        while True:
+                            try:
+                                basement_availability = input(
 """
 Choose 'yes' or 'no' for your basement availability.
 To get out of the page, please press '0':
 """).lower()
-                   if basement_availability == yes:
-                       print_every_house_with_basement()
-                   elif basement_availability == no:
-                       print_every_house_without_basement()
-                   elif int(basement_availability) == quit:
-                       break
-                   else:
-                       print("You may only choose 'yes' or 'no' for this option, please try again.")
-           #To get out of the selection
-           elif custom_input == quit:
-               break
-           #Invalid input message
-           else:
-               print('Oops, invalid input! Please try again!')
-   #break out of code
-   elif user_input == quit:
-       break
-   #unavailable option message
-   else:
-       print('Oops, this option is not available. Please try another one!')
+                                if basement_availability == yes:
+                                    print_every_house_with_basement()
+                                elif basement_availability == no:
+                                    print_every_house_without_basement()
+                                elif int(basement_availability) == quit:
+                                    break
+                                else:
+                                    print("You may only choose 'yes' or 'no' for this option, please try again.")
+                            except ValueError:
+                                print('This is not a valid option, please enter "yes" or "no".')
+                    #To get out of the selection
+                    elif custom_input == quit:
+                        break
+                    #Invalid input message
+                    else:
+                        print('Oops, invalid input! Please try again!')
+                except ValueError:
+                    print('Oops, invalid input! Please try again!')
+        #break out of code
+        elif user_input == quit:
+            break
+        #unavailable option message
+        else:
+            print('Oops, this option is not available. Please try another one!')
+    except ValueError:
+        print('This is not a valid option, please type an integer!')
