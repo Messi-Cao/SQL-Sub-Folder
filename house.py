@@ -682,11 +682,12 @@ four_floors = 4
 yes = "yes"
 no = "no"
 #Main function of the application
+username = input("Hello, what's your name: ")
 while True:
     try: 
         user_input = int(input(
 f"""
-Welcome user, to the application of 'Pocket City House Selector' where you can explore 12 Pocket City houses on auction!
+Welcome {username}, to the application of 'Pocket City House Selector' where you can explore 12 Pocket City houses on auction!
 Press '0' whenever you need to leave a selection page.
 Please keep in mind you must type the exact same character shown to the left of the option.
 (E.g. When it displays "1. Print all houses", you must type exactly that character ("1") into the input to avoid errors.)
