@@ -641,8 +641,6 @@ def print_every_house_without_basement():
 
 
 #Main code
-#passcode required to log in
-passcode = 9087
 #quit variable
 quit = 0
 #variables for main menu
@@ -683,22 +681,12 @@ four_floors = 4
 #variables for basement availability
 yes = "yes"
 no = "no"
-#Main functioning code of the application
-print(
-"""
-Welcome user, to the application of 'Pocket City House Selector' where you can explore 12 Pocket City houses on auction!
-""")
-user_start = input(
-"""
-Have you ever logged in before?: 
-1. Yes, I have logged in before. 
-2. No, I have never logged in before. 
-""")
+#Main function of the application
 while True:
     try: 
         user_input = int(input(
 f"""
-Welcome {username}, to the application of 'Pocket City House Selector' where you can explore 12 Pocket City houses on auction!
+Welcome user, to the application of 'Pocket City House Selector' where you can explore 12 Pocket City houses on auction!
 Press '0' whenever you need to leave a selection page.
 Please keep in mind you must type the exact same character shown to the left of the option.
 (E.g. When it displays "1. Print all houses", you must type exactly that character ("1") into the input to avoid errors.)
