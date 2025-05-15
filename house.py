@@ -640,9 +640,11 @@ def print_every_house_without_basement():
            print("----------------------------------------")
 
 
-#Main code
+#List of variables for the main code
 #quit variable
 quit = 0
+#boundary cases
+min_bound = 0
 #variables for main menu
 print_all = 1
 print_all_by_address = 2
@@ -753,12 +755,14 @@ To get out of the page, please press '0':
                                     print_every_house_with_six_bedrooms()
                                 elif bedroom_quantity == seven_bedrooms:
                                     print_every_house_with_seven_bedrooms()
+                                elif bedroom_quantity < min_bound:
+                                    print('This is not a valid integer, please enter a positive integer.')
                                 elif bedroom_quantity == quit:
                                     break
                                 else:
                                     print('Sorry, we currently do not have this option. Please come back after!')
                             except ValueError:
-                                print('This is not a valid option. Please type an integer.')
+                                print('This is not a valid option. Please enter an integer.')
                     #bathroom quantity
                     elif custom_input == bathrooms:
                         while True:
@@ -782,12 +786,14 @@ To get out of the page, please press '0':
                                     print_every_house_with_five_bathrooms()
                                 elif bathroom_quantity == ten_bathrooms:
                                     print_every_house_with_ten_bathrooms()
+                                elif bathroom_quantity < min_bound:
+                                    print('This is not a valid integer, please enter a positive integer.')
                                 elif bathroom_quantity == quit:
                                     break
                                 else:
                                     print('Sorry, we currently do not have this option. Please come back after!')
                             except ValueError:
-                                print('This is not a valid option, please type an integer or a decimal number.')
+                                print('This is not a valid option, please enter an integer or a decimal number.')
                     #floor quantity
                     elif custom_input == floors:
                         while True:
@@ -807,10 +813,12 @@ To get out of the page, please press '0':
                                     print_every_house_with_four_floors()
                                 elif floor_quantity == quit:
                                     break
+                                elif floor_quantity < min_bound:
+                                    print('This is not a valid integer, please enter a positive integer.')
                                 else:
                                     print('Sorry, we currently do not have this option. Please come back after!')
                             except ValueError:
-                                print('This is not a valid option, please type an integer.')
+                                print('This is not a valid option, please enter an integer.')
                     #basement availability
                     elif custom_input == basement:
                         while True:
@@ -827,17 +835,22 @@ To get out of the page, please press '0':
                                 elif int(basement_availability) == quit:
                                     break
                                 else:
-                                    print("You may only choose 'yes' or 'no' for this option, please try again.")
+                                    print("No integers allowed. You may only choose 'yes' or 'no' for this option, please try again.")
                             except ValueError:
                                 print('This is not a valid option, please enter "yes" or "no".')
                     #To get out of the selection
+                    elif custom_input < min_bound:
+                        print('This is not a valid integer, please enter a positive integer.')
                     elif custom_input == quit:
                         break
-                    #Invalid input message
+                    #Unavailable option
                     else:
-                        print('Oops, invalid input! Please try again!')
+                        print('Oops, this option is not available. Please try another one!')
+                #Invalid input message
                 except ValueError:
                     print('Oops, invalid input! Please try again!')
+        elif user_input < min_bound:
+            print('This is not a valid integer, please enter a positive integer.')
         #break out of code
         elif user_input == quit:
             break
@@ -845,4 +858,4 @@ To get out of the page, please press '0':
         else:
             print('Oops, this option is not available. Please try another one!')
     except ValueError:
-        print('This is not a valid option, please type an integer!')
+        print('This is not a valid option, please enter an integer!')
